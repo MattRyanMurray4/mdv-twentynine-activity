@@ -1,0 +1,15 @@
+<div class="container">
+  <div class="col-50" layout="row" layout-align="center center">
+    <playground-ideas-list
+      [ideas]="ideas$ | async"
+      (selected)="selectIdea($event)"
+    ></playground-ideas-list>
+  </div>
+  <div class="col-50" layout="row" layout-align="center center">
+    <playground-idea-details
+      [form]="form"
+      [idea]="selectedIdea$ | async"
+      (cancelled)="cancel()"
+    ></playground-idea-details>
+  </div>
+</div>

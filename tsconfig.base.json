@@ -14,8 +14,15 @@
     "skipLibCheck": true,
     "skipDefaultLibCheck": true,
     "baseUrl": ".",
+    "strictPropertyInitialization": false,
     "paths": {
-      "@playground/api-interfaces": ["libs/api-interfaces/src/index.ts"]
+      "@playground/api-interfaces": ["libs/api-interfaces/src/index.ts"],
+      "@playground/core-data": ["libs/core-data/src/index.ts"],
+      "@playground/core-state": ["libs/core-state/src/index.ts"],
+      "@env/environment": ["libs/environment/src/lib/environments/index.ts"],
+      "@playground/material": ["libs/material/src/index.ts"],
+      "@playground/theme": ["libs/theme/src/index.ts"],
+      "@playground/ui-library": ["libs/ui-library/src/index.ts"]
     }
   },
   "exclude": ["node_modules", "tmp"]

@@ -1,6 +1,4 @@
 import { Component } from '@angular/core';
-import { HttpClient } from '@angular/common/http';
-import { Message } from '@playground/api-interfaces';
 
 @Component({
   selector: 'playground-root',
@@ -8,6 +6,9 @@ import { Message } from '@playground/api-interfaces';
   styleUrls: ['./app.component.scss'],
 })
 export class AppComponent {
-  hello$ = this.http.get<Message>('/api/hello');
-  constructor(private http: HttpClient) {}
+  title = 'I' + 'D' + 'E' + 'A' + '-' + 'A' + 'P' + 'P';
+  links = [
+    { path: '/', icon: 'home', title: 'Login' },
+    { path: 'ideas', icon: 'view_list', title: 'Idea-List' },
+  ];
 }
